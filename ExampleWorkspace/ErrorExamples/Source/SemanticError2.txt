@@ -1,0 +1,8 @@
+function join(String sz1, String sz2)
+    return (sz1 + " " + sz2)
+endfunction
+
+main
+    join()
+    int x = join("one", "two")
+endmain

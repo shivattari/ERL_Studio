@@ -1,0 +1,7 @@
+function addTwo(int x)
+    return x + 2
+endfunction
+
+main
+    print(addTwo(1))
+endmain

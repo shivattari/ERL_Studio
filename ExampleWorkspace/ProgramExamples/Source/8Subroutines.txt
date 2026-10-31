@@ -1,0 +1,38 @@
+function countLines(String szPath)
+    myFile = open(szPath)
+
+    int iNumLines = 0
+
+    while NOT myFile.endOfFile()
+        myFile.readLine()
+        iNumLines = iNumLines + 1
+    endwhile
+    
+    myFile.close()
+
+    return iNumLines
+endfunction
+
+procedure appendToFile(String szPath)
+    array String szLines[countLines(szPath) + 1]
+
+    int iCount = 0
+
+    myFile = open(szPath)
+    while NOT myFile.endOfFile()
+        szLines[iCount] = myFile.readLine()
+        iCount = iCount + 1
+    endwhile
+
+    szLines[iCount] = input("Enter text to save to the file:")
+
+    for i = 0 to iCount
+        myFile.writeLine(szLines[i])
+    next i
+
+    myFile.close()
+endprocedure
+
+main
+    appendToFile("appendData.txt")
+endmain

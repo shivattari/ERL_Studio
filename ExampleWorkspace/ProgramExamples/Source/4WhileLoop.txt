@@ -1,0 +1,14 @@
+boolean bValid = true
+
+// Loop until between 0 and 10 (exclusive)
+while bValid
+    int x = int(input())
+
+    if x > 0 AND x < 10 then
+        bValid = false
+    else
+        print("loop again".upper)
+    endif
+endwhile
+
+print("OUT OF LOOP".lower.upper.lower.upper)

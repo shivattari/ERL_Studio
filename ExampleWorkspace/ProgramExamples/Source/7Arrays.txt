@@ -1,0 +1,10 @@
+array String scores = [
+    ["Peter", "60"], 
+    ["Ayo", "75"]
+]
+
+for i = 0 to scores.length - 1
+    for j = 0 to scores[i].length - 1
+        print(scores[i, j])
+    next j
+next i

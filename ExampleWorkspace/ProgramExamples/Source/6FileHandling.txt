@@ -1,0 +1,8 @@
+file = open("data.txt") // Create file handler
+
+while NOT file.endOfFile() // Iterate through file
+    print(file.readLine())
+endwhile
+
+file.writeLine("Text") // Overwrites previous content
+file.close()

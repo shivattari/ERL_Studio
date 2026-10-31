@@ -1,0 +1,11 @@
+function factorial(int n)
+    if n <= 1 then
+        return n
+    endif
+    return n * factorial(n - 1)
+endfunction
+
+main
+    int result = factorial(5)
+    print(result)
+endmain

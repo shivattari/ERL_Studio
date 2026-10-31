@@ -1,0 +1,9 @@
+boolean x = false
+int y = 5
+
+do
+    String z = str(x)
+    String a = z.substring(0, y)
+    print(a)
+    y = y - 1
+until y == 0

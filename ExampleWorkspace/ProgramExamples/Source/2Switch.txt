@@ -1,0 +1,15 @@
+int x = int(input("Enter a number: "))
+int y
+
+switch x:
+    case 1:
+        y = 10
+    case 2:
+        y = 20
+    case 3:
+        y = 30
+    default:
+        y = 0
+endswitch
+
+print(x + y)

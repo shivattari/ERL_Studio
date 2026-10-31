@@ -70,7 +70,7 @@ public class WorkspaceSelector extends JFrame
             else
             {
                 // NOTE: Adjust root directory as required
-                File startDirectory = new File("Z:\\");
+                File startDirectory = new File("C:\\");
 
                 CustomFolderChooser chooser = new CustomFolderChooser(this, startDirectory);
                 selectedWorkspace = chooser.showDialog();
